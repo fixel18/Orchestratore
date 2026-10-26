@@ -1,0 +1,41 @@
+{
+  "spegnimento_automatico": false,
+  "avvio_automatico": {
+    "attivo": false,
+    "modalita": "sempre",
+    "fasce": [
+      {
+        "da": "22:00",
+        "a": "07:00"
+      }
+    ]
+  },
+  "controllore": {
+    "strumento": "claude",
+    "modello": "claude-opus-5-5",
+    "ragionamento": "medium"
+  },
+  "esecutori": {
+    "codex": {
+      "attivo": true,
+      "modello": "gpt-6.1-sol",
+      "ragionamento": "medium",
+      "priorita": 1,
+      "limite_5h_percento": null
+    },
+    "claude": {
+      "attivo": false,
+      "modello": "claude-opus-5-5",
+      "ragionamento": "medium",
+      "priorita": 2,
+      "limite_5h_percento": null
+    },
+    "antigravity": {
+      "attivo": false,
+      "modello": "",
+      "ragionamento": "",
+      "priorita": 3,
+      "limite_5h_percento": null
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "cartella_base": ".",
+  "comando_codex": [
+    "codex.cmd"
+  ],
+  "modello_codex": "gpt-6.1-sol",
+  "ragionamento_codex": "medium",
+  "comando_claude": [
+    "claude.cmd"
+  ],
+  "url_modello": "http://127.0.0.1:11434/api/chat",
+  "nome_modello": "qwen3:14b",
+  "timeout_modello_s": 300,
+  "num_ctx_modello": 16384,
+  "sandbox_codex": "workspace-write",
+  "variabili_da_rimuovere": [
+    "OPENAI_API_KEY",
+    "ANTHROPIC_API_KEY"
+  ],
+  "escludi_dal_commit": [
+    "**/__pycache__/**",
+    "**/*.pyc",
+    "**/*.tsbuildinfo",
+    "**/.next/**",
+    "**/node_modules/**",
+    "**/.env*"
+  ],
+  "push_abilitato": false,
+  "spegnimento_abilitato": false,
+  "comando_spegnimento": [
+    "shutdown",
+    "/s",
+    "/t",
+    "0",
+    "/c",
+    "Orchestratore: lavoro terminato"
+  ],
+  "attesa_prima_spegnimento_s": 120,
+  "soglia_limite_settimanale_ore": 12,
+  "timeout_report_s": 600,
+  "rimandi_max_per_pezzo": 2,
+  "bocciature_claude_max": 3,
+  "attesa_limite_minuti": 30,
+  "timeout_codex_minuti": 60,
+  "timeout_verifica_minuti": 20,
+  "timeout_claude_minuti": 20,
+  "intervallo_coda_vuota_s": 300,
+  "consenti_modifiche_preesistenti": false
+}
